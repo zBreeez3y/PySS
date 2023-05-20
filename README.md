@@ -14,4 +14,5 @@ A script written on Python3 that will query RSS feeds from a list and email you 
 - Create an App password for your gmail account you'll use to send the RSS emails (Highly recommended to create a burner Gmail account for this script)
 - Create an environment variable called "gmailpass" and set the value to the app password you created
 - Edit lines 50 and 51 to provide the address for the sender of the RSS email, and the address for the receiver of the RSS email. 
+- Ensure you have the "Requests" Python module installed
 - Create a scheduled task to run every hour from the time of start, indefinitely (or schedule an end time). 
