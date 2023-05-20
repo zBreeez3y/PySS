@@ -49,7 +49,6 @@ password = os.environ['gmailpass']
 port = 587
 sender = ""
 receiver = ""
-subject = "Latest Security Articles"
 
 #Writing to error file if Sender/Reciever variables are null
 if not (sender and receiver):
