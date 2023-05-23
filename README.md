@@ -1,8 +1,8 @@
 # PySS
-A script written on Python3 that will query RSS feeds from a list and email you the latest articles that are published. 
+A script written in Python3 that will query RSS feeds from a list and email you the latest articles that are published. 
 
 ## What does PySS do? 
-- PySS was created to be ran as a scheduled task that executes at the top of the hour. 
+- PySS was created to be ran as a scheduled task that executes every hour, but obviously set it up to your liking :) 
 - Upon execution, PySS will run through a list of RSS URL's and query the HTML of the entire feed.
 - It then parses the HTML of each feed for the <link> tags as these are the tags that contain the URL to the feed's articles. 
 - PySS will then write all the links to a temporary text file, where it will compare against the current list of article URLs from the prior run
@@ -15,4 +15,4 @@ A script written on Python3 that will query RSS feeds from a list and email you 
 - Create an environment variable called "gmailpass" and set the value to the app password you created
 - Edit lines 50 and 51 to provide the address for the sender of the RSS email, and the address for the receiver of the RSS email. 
 - Ensure you have the "Requests" Python module installed
-- Create a scheduled task to run every hour from the time of start, indefinitely (or schedule an end time). 
+- Create a scheduled task to run every hour (or however else you like) from the time of start, indefinitely (or schedule an end time). 
