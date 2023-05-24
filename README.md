@@ -4,7 +4,7 @@ A script written in Python3 that will query RSS feeds from a list and email you 
 ## What does PySS do? 
 - PySS was created to be ran as a scheduled task that executes every hour, but obviously set it up to your liking :) 
 - Upon execution, PySS will run through a list of RSS URL's and query the HTML of the entire feed.
-- It then parses the HTML of each feed for the <link> tags as these are the tags that contain the URL to the feed's articles. 
+- It then parses the HTML of each feed for the "<link>" tags as these are the tags that contain the URL to the feed's articles. 
 - PySS will then write all the links to a temporary text file, where it will compare against the current list of article URLs from the prior run
   - The first time running, it will only create the original list. Every subsequent run after will write to a temp list and compare with the original. 
 - If any differences are found, PySS will create a new list and append each new article URL to the list, and email that list to you using the Gmail SMTP server
